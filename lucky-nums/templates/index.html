@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="font-mono flex justify-center">
+  <head>
+    <title>LuckyNum</title>
+    <script src="https://unpkg.com/jquery"></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="/static/style.css" rel="stylesheet" />
+  </head>
+  <body class="flex flex-col justify-center mt-5">
+    <div
+      class="flex justify-center w-96 shadow-slate-200 shadow-2xl rounded-md p-5"
+    >
+      <form id="lucky-form" class="h-50 flex flex-col">
+        <div>
+          Name:
+          <input
+            id="name"
+            class="shadow-md hover:shadow-lg ease-in-out duration-300"
+          />
+          <b id="name-err"></b>
+        </div>
+        <div>
+          Birth Year:
+          <input
+            id="year"
+            class="shadow-md hover:shadow-lg ease-in-out duration-300"
+          />
+          <b id="year-err"></b>
+        </div>
+        <div>
+          Email:
+          <input
+            id="email"
+            class="shadow-md hover:shadow-lg ease-in-out duration-300"
+          />
+          <b id="email-err"></b>
+        </div>
+        <div>
+          Color:
+          <input
+            id="color"
+            class="shadow-md hover:shadow-lg ease-in-out duration-300"
+          />
+          <b id="color-err"></b>
+        </div>
+        <button class="shadow-md hover:shadow-lg ease-in-out duration-300">
+          I Want To Feel Lucky!
+        </button>
+      </form>
+    </div>
+
+    <div id="lucky-results" class="ml-2 w-96 flex flex-row mt-10"></div>
+
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="/static/lucky.js"></script>
+  </body>
+</html>
